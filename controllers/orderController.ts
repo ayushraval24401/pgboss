@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import { PrismaClient } from "@prisma/client";
-import sendMailQueue from "../queues/sender";
+import sendMailQueue from "../queues/sender/sender";
 import orderRepositories from "../repository/orderRepositories";
 
 class OrderController {

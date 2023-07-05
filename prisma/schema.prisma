@@ -19,3 +19,25 @@ model Order {
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 }
+
+model User {
+  id Int @id @default(autoincrement()) 
+  isActive Boolean? 
+  age Int?
+  name String?
+  gender String?
+  company String?
+  email String?
+  phone String?
+}
+
+model Customer{
+  id Int @id @default(autoincrement()) 
+  isActive Boolean? 
+  age Int?
+  name String?
+  gender String?
+  company String?
+  email String?
+  phone String? 
+}

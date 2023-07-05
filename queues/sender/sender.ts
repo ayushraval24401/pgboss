@@ -1,6 +1,6 @@
 import PgBoss from "pg-boss";
-import receiveMailQueue from "./receiver";
-import orderRepositories from "../repository/orderRepositories";
+import receiveMailQueue from "../receiver/receiver";
+import orderRepositories from "../../repository/orderRepositories";
 
 const sendMailQueue = async (to: string, subject: string, orderId: number) => {
   const boss = new PgBoss({ connectionString: `${process.env.DATABASE_URL}` });
